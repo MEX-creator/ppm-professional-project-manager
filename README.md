@@ -1,20 +1,48 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# PPM - AI Project Manager
 
-# Run and deploy your AI Studio app
+PPM is a professional, direct, and supportive AI project management assistant built for freelance software developers. 
 
-This contains everything you need to run your app locally.
+## Features
+- **Project Planning**: Get structured project plans with phases, tasks, milestones, and effort estimates.
+- **Task Prioritization**: Reorder daily list by deadline, dependency, and client impact.
+- **Progress Tracking**: Track projects visually with progression status and ASCII progress bars.
+- **Client Communication**: Draft professional emails, Slack messages, and meeting agendas.
+- **Scope & Risk Radar**: Instantly detect scope creep and get ready-to-use scripts to push back professionally.
+- **Financial & Admin**: Generate invoice line-item descriptions and track retainer hours.
 
-View your app in AI Studio: https://ai.studio/apps/118297ca-b4ef-4a74-8910-5fb74ea1f221
+## Prerequisites
 
-## Run Locally
+- Node.js (v18 or newer recommended)
+- A Gemini API Key from Google AI Studio
 
-**Prerequisites:**  Node.js
+## Setup
 
+1. Create a `.env` file in the root directory and add your API credentials based on the `.env.example` file:
+   ```env
+   GEMINI_API_KEY="your_api_key_here"
+   ```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+2. Install the necessary dependencies:
+   ```bash
+   npm install
+   ```
+
+## Development
+
+Run the following command to start the development environment:
+```bash
+npm run dev
+```
+
+## Production Build
+
+To build the project for production and run the compiled server:
+```bash
+npm run build
+npm run start
+```
+
+## Tech Stack
+- Frontend: React, TailwindCSS, Lucide Icons, Vite
+- Backend: Node.js, Express
+- AI: Google Gen AI SDK
