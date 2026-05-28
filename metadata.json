@@ -1,0 +1,6 @@
+{
+  "name": "PPM - AI Project Manager",
+  "description": "Professional Project Manager (PPM) with Alex, your direct and supportive AI assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
